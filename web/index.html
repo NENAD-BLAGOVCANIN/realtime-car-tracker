@@ -14,24 +14,23 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="w-100">
                 <ul class="navbar-nav m-auto justify-content-center align-items-center">
                     <li class="nav-item active">
                         <a class="nav-link px-3" href="/">
-                            <h3 class="text-danger">RTCLT</h3>
+                            <h4 class="text-danger m-0">RTCLT</h4>
                         </a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link px-3" href="/">Početna</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3" href="about.html">O Projektu</a>
+                        <a class="nav-link px-3" href="#about-project">O projektu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#about-me">O meni</a>
                     </li>
                 </ul>
             </div>
@@ -41,7 +40,7 @@
 
     <div class="container py-5" style="max-width: 1500px !important;">
 
-        <h3 class="pb-2">Real Time Location <i class="fa-solid fa-location-dot text-danger"></i></h3>
+        <h3 class="pb-2">Pratite realtime lokaciju <i class="fa-solid fa-location-dot text-danger"></i></h3>
 
         <iframe id="map" frameborder="0" style="border:0"
             src="https://www.google.com/maps/embed/v1/view?key=AIzaSyC2ALWyjQrWMj7KVXEfSuHupiQdPGWWqss&center=43.8269,18.3832&zoom=15"
@@ -49,11 +48,47 @@
         </iframe>
 
 
-        <h3 class="pb-2 pt-5">O Projektu</h3>
+        <div id="about-project">
+            <h3 class="pb-2 pt-5">O projektu</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quibusdam, consequatur unde quidem qui, sed
-            enim magnam similique asperiores optio et. Voluptate eligendi delectus sit assumenda adipisci dicta vel
-            velit.</p>
+            <p>
+                Dobrodošli na web stranicu koja prikazuje lokaciju automobila u stvarnom vremenu! Ovaj projekt je
+                kreirao Strahinja Jagoš kao seminarski rad na Informatičkom fakultetu. Ako želite istražiti kod koji
+                stoji iza ove web stranice, možete pogledati repozitorij na GitHub linku ispod.
+                <br><br>
+                Lokacija automobila se prikazuje u stvarnom vremenu zahvaljujući Firebase-ovom Realtime Database-u.
+                Podaci o lokaciji ažuriraju se u stvarnom vremenu i automatski se prikazuju na web stranici,
+                omogućavajući vam da uvijek budete informirani o trenutnoj poziciji.
+                <br><br>
+                Ova aplikacija je hostovana na Raspberry Pi računaru, koji je opremljen GPS modulom. GPS modul prikuplja
+                podatke o lokaciji vozila, a zatim se ti podaci šalju na Firebase server putem interneta. Na taj način
+                osiguravamo pouzdano praćenje lokacije vozila u stvarnom vremenu.
+
+            </p>
+
+            <span>Github repozitorij: <a href="https://github.com/NENAD-BLAGOVCANIN/realtime-car-tracker">https://github.com/NENAD-BLAGOVCANIN/realtime-car-tracker</a></span>
+
+        </div>
+
+
+        <div id="about-me">
+            <h3 class="pb-2 pt-5">O meni</h3>
+
+            <p>
+                Ja sam Strahinja Jagoš, student Informatickog fakulteta koji je strastven u istraživanju i razvoju
+                softvera.
+                Kroz svoje akademske projekte i vanškolske aktivnosti, stekao sam širok spektar vještina u području
+                programiranja.
+                <br><br>
+                Moja strast prema tehnologiji me motiviše da neprestano učim i istražujem nove koncepte i alate kako bih
+                unaprijedio svoje vještine i doprinjeo razvoju inovativnih projekata. Kroz ovaj projekat, želim
+                podijeliti
+                svoje znanje i iskustvo s vama te vam pružiti uvid u mogućnosti koje pruža tehnologija praćenja lokacije
+                u
+                stvarnom vremenu.
+            </p>
+        </div>
+
 
     </div>
 
