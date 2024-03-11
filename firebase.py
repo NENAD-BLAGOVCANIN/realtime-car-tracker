@@ -13,5 +13,3 @@ def update_location(latitude, longitude):
         'latitude': latitude,
         'longitude': longitude
     })
-    print("Location updated successfully.")
-

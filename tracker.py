@@ -1,7 +1,12 @@
 import geocoder
+import time
 from firebase import update_location
 
-g = geocoder.ip('me')
-print(g.latlng)
-
-update_location(g.latlng[0], g.latlng[1])
+while True:
+    g = geocoder.ip('me')
+    latitude, longitude = g.latlng
+    print("Latitude:", latitude, "Longitude:", longitude)
+    
+    update_location(latitude, longitude)
+    
+    time.sleep(5)
