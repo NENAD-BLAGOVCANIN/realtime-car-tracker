@@ -1,27 +1,26 @@
-# chimera-launcher
-This is an app launcher developed with ElectronJS.
+# Praćenje Lokacije Automobila u Stvarnom Vremenu
 
-## Installation
+## Instalacija
 
-First install all the packages:
+Prvo instalirajte sve pakete:
 ``
 pip install -r requirements.txt
 ``
 
-Run the tracker program:
+Pokrenite program za praćenje:
 ``
 cd tracker
 python tracker.py
 ``
 
-## Run the web server
+## Pokretanje web servera
 
-To start the web server run:
+Za pokretanje web servera pokrenite:
 ``
 python -m http.server
 ``
 
-To forward the web app to a public url with ngrok run:
+Za proslijeđivanje web aplikacije na javni URL pomoću ngrok-a pokrenite:
 ``
 ngrok http 8000
 ``
